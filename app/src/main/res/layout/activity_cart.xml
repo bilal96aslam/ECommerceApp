@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rel2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Total Price:"
+            android:layout_marginTop="10dp"
+            android:id="@+id/price_txt"
+
+            ></TextView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="Congratulation, your final order placed successfully. Soon it will be verified"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/msg1"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_list"
+        android:layout_below="@id/rel2"
+        android:layout_above="@+id/next_btn" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_btn"
+        android:text="Next"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>
